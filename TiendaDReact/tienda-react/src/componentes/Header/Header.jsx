@@ -27,11 +27,15 @@ const Header = () => {
     <Container>
       <Wrapper>
         <IconContext.Provider value={{ style: { fontSize: "2em" } }}>
+        
           <LogoContainer>
+          <a name="Inicio" href="">
             <FaShoppingBag />
+            </a>
             <p>Tienda - </p>
-            <p>React(X)</p>
+            <p>React(X)</p> 
           </LogoContainer>
+         
 
           <MobileIcon onClick={() => setShowMobileMenu(!showMobileMenu)}>
             {showMobileMenu ? <FaTimes /> : <FaBars />}
